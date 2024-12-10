@@ -33,6 +33,7 @@ var callbacks: Reference
 var trans_patch: Reference
 var settings: Reference
 var class_patch: Reference
+var scene_patch: Reference
 var cheat_mod: Reference
 var world: Reference
 var items: Reference
@@ -50,6 +51,7 @@ func _init() -> void:
 	trans_patch = preload("trans_patch.gd").new()
 	settings = preload("settings.gd").new(self)
 	class_patch = preload("class_patch.gd").new()
+	scene_patch = preload("scene_patch.gd").new()
 	cheat_mod = preload("cheat_mod.gd").new()
 	world = preload("world.gd").new(self)
 	items = preload("items.gd").new()
